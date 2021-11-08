@@ -1,0 +1,26 @@
+name: release
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ] 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.4.1
+      - uses: mikefarah/yq@v4.14.1
+        
+      - name: Build Resume
+        run: |
+          npm install -g resume-cli jsonresume-theme-kwan
+          yq -o=json eval resume.yaml > resume.json
+          resume export resume --format pdf --theme kwan
+      - uses: actions/upload-artifact@v2
+        with:
+          name: resume.pdf
+          path: resume.pdf
