@@ -17,10 +17,9 @@ jobs:
         
       - name: Build Resume
         run: |
-          npm install -g resume-cli
-          npm install jsonresume-theme-kwan
+          npm install resume-cli npm install jsonresume-theme-kwan
           yq -o=json eval resume.yaml > resume.json
-          resume export resume --format pdf --theme kwan
+          ./node_modules/resume-cli/build/main.js export resume --format pdf --theme kwan
       - uses: actions/upload-artifact@v2
         with:
           name: resume.pdf
