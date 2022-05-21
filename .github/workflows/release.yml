@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install -g resume-cli 
           npm install jsonresume-theme-kwan
-          resume export resume --resume resume.yaml --format pdf --theme ./node_modules/jsonresume-theme-kwan
+          resume export resume --resume resume.yaml --format pdf --theme kwan
           
       - uses: actions/upload-artifact@v3
         with:
