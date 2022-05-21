@@ -22,7 +22,6 @@ jobs:
         
       - name: build-resume
         run: |
-          npm install -g underscore.string
           yq -o=json eval resume.yaml > resume.json
           npm install
           npm start

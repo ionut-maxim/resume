@@ -7,6 +7,7 @@
   "dependencies": {
     "jsonresume-theme-kwan": "^0.0.2",
     "puppeteer": "^14.1.1",
-    "resumed": "^1.0.3"
+    "resumed": "^1.0.3",
+    "underscore.string": "^3.3.6"
   }
 }
