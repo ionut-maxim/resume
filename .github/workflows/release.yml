@@ -22,8 +22,14 @@ jobs:
         run: |
           npm install -g resume-cli
           npm init --yes 
-          npm install jsonresume-theme-kwan
+          npm install jsonresume-theme-kwang
           resume export --resume resume.yaml --theme kwan resume.pdf
+      
+      - name: debug
+        run: |
+          pwd
+          ll
+          tree
           
       # - name: convert-resume
       #   uses: fifsky/html-to-pdf-action@master
