@@ -22,7 +22,14 @@ jobs:
         run: |
           npm install -g resume-cli 
           npm install jsonresume-theme-kwan
-          resume export resume --resume resume.yaml --format pdf --theme kwan
+          resume export resume --resume resume.yaml --theme kwan
+          
+      - name: convert-resume
+        uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: resume.html
+          outputFile: resume.pdf
+          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
           
       - uses: actions/upload-artifact@v3
         with:
