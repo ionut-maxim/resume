@@ -25,19 +25,6 @@ jobs:
           yq -o=json eval resume.yaml > resume.json
           npm install
           npm start
-      
-      - name: debug
-        run: |
-          pwd
-          ls -la
-          tree
-          
-      # - name: convert-resume
-      #   uses: fifsky/html-to-pdf-action@master
-      #   with:
-      #     htmlFile: resume.html
-      #     outputFile: resume.pdf
-      #     pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
           
       - uses: actions/upload-artifact@v3
         with:
