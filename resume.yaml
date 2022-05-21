@@ -78,6 +78,8 @@ skills:
 projects:
   - name: Home Projects
     description: I keep a kubernetes cluster on 3 Intel NUCs that host all of my internal services
+    highlights:
+      - ""
     keywords:
       - Kubernetes
       - Pulumi
