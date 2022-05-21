@@ -3,7 +3,7 @@ $schema: "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sche
 basics:
   name: Ionuț Maxim
   label: Automation Engineer
-  image: profile-photo.jpg
+  image: https://avatars.githubusercontent.com/u/518296?v=4
   email: me@ionutmaxim.ro
   phone: +40 765 430 950
   profiles:
