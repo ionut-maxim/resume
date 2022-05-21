@@ -11,16 +11,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.4.1
-      - uses: mikefarah/yq@v4.14.1
+      - uses: actions/checkout@v3
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+          check-latest: true
         
-      - name: Build Resume
+      - name: build-resume
         run: |
-          npm install resume-cli jsonresume-theme-kwan
-          yq -o=json eval resume.yaml > resume.json
-          ./node_modules/resume-cli/build/main.js export resume --format pdf
-      - uses: actions/upload-artifact@v2
+          npm install -g resume-cli jsonresume-theme-kwan
+          resume export resume --format pdf
+          
+      - uses: actions/upload-artifact@v3
         with:
           name: resume.pdf
           path: resume.pdf
