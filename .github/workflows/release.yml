@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install -g resume-cli
           npm init --yes 
-          npm install jsonresume-theme-kwang
+          npm install jsonresume-theme-kwan
           resume export --resume resume.yaml --theme kwan resume.pdf
       
       - name: debug
