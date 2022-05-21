@@ -22,9 +22,9 @@ jobs:
         
       - name: build-resume
         run: |
-          npm install resumed  jsonresume-theme-kwan
           yq -o=json eval resume.yaml > resume.json
-          resumed export --theme kwan
+          npm install
+          npm start
       
       - name: debug
         run: |
@@ -32,12 +32,12 @@ jobs:
           ls -la
           tree
           
-      - name: convert-resume
-        uses: fifsky/html-to-pdf-action@master
-        with:
-          htmlFile: resume.html
-          outputFile: resume.pdf
-          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+      # - name: convert-resume
+      #   uses: fifsky/html-to-pdf-action@master
+      #   with:
+      #     htmlFile: resume.html
+      #     outputFile: resume.pdf
+      #     pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
           
       - uses: actions/upload-artifact@v3
         with:
