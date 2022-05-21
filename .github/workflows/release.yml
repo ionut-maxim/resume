@@ -20,15 +20,14 @@ jobs:
         
       - name: build-resume
         run: |
-          npm install -g resume-cli
           npm init --yes 
-          npm install jsonresume-theme-kwan
-          resume export --resume resume.yaml --theme kwan resume.pdf
+          npm install resume-cli jsonresume-theme-kwan
+          node node_modules/resume-cli export --resume resume.yaml --theme kwan resume.html
       
       - name: debug
         run: |
           pwd
-          ll
+          ls -la
           tree
           
       # - name: convert-resume
