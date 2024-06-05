@@ -13,7 +13,7 @@ education: []
 work:
   - name: Kubeark
     position: Senior Software Engineer
-    url: https://www.kubeark.io
+    url: https://www.kubeark.com
     startDate: "2022-08-01"
     highlights:
       - Backend developer for Golang and Python services.
