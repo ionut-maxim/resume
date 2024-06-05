@@ -1,4 +1,3 @@
-
 $schema: "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
 basics:
   name: Ionuț Maxim
@@ -13,68 +12,69 @@ basics:
 education: []
 work:
   - name: Kubeark
-    position: Backend Engineer
-    url: https://www.kubeark.io
+    position: Senior Software Engineer
+    url: https://www.kubeark.com
     startDate: "2022-08-01"
     highlights:
-      - Golang and Python developer
+      - Backend developer for Golang and Python services.
+      - Developed a workflow engine in Golang and a basic serverless service.
   - name: Secureworks
     position: Automation and Orchestration Engineer
     url: https://www.secureworks.com
     startDate: "2019-12-01"
     highlights:
-      - Developed playbooks/automations for the internal orchestration platforms
-      - Scripting on these platforms is done using Groovy and Google CEL
-      - Many of the automations done are related to security events
+      - Developed playbooks and automations for internal orchestration platforms.
+      - Scripting on these platforms using Groovy and Google CEL.
+      - Created automations related to security events.
   - name: Cegeka Romania
     position: Automation Engineer
     url: https://www.cegeka.com/en/ro/
     startDate: "2017-09-01"
     endDate: "2019-12-01"
     highlights:
-      - Worked with Resolve Systems to help implement their automation platform in our environment
-      - Built playbooks for monitoring events (for some events remediation was also done), report generation and started work on a phishing playbook
-      - Did some frontend work using Javascript(SenchaJS) for some of the playbooks(automations)
-      - Most of the code was written in Groovy with some specific scenarios requiring Powershell or Bash scripts
-      - Besides implementation I had the responsibility to meet with our internal teams and understand their automation needs
+      - Worked with Resolve Systems to implement their automation platform.
+      - Built playbooks for monitoring events, report generation, and phishing scenarios.
+      - Did frontend work using Javascript (SenchaJS) for some playbooks.
+      - Wrote most of the code in Groovy, with some scenarios requiring Powershell or Bash scripts.
+      - Met with internal teams to understand their automation needs.
   - name: Natek
     position: Application Packager
     url: https://natek.eu
     startDate: "2017-03-01"
     highlights:
-      - Application Packaging for Johnson Controls
-      - Powershell and VBScript scripting
+      - Application Packaging for Johnson Controls.
+      - Scripting using Powershell and VBScript.
   - name: Cegeka Romania
     position: Application Packager
     url: https://www.cegeka.com/en/ro/
     startDate: "2013-05-01"
     endDate: "2017-09-01"
     highlights:
-      - Started as a one man team and had to define processes for the packaging service
-      - The responsibilities are similar to the previous job
-      - Moved from VBScript to Powershell for scripting
-      - Besides packaging I did support in customers SCCM environments
+      - Started as a one-man team, defining processes for the packaging service.
+      - Responsibilities similar to the previous job.
+      - Moved from VBScript to Powershell for scripting.
+      - Provided support in customer SCCM environments.
   - name: AQUASoft
     position: Application Packager
     url: http://aquasoft.ro
     startDate: "2011-07-01"
     endDate: "2013-05-01"
     highlights:
-      - Subsidiary for the IBM Packaging Factory
-      - Main responsibility was creating silent installation packages for distribution in enterprise environments
-      - 'Used tools like: Wise Package Studio, InstallShield Repackager, Microsoft Orca'
-      - Scripting for the packages was done using VBScript
-      - Was also part of a project to deploy packages using SCCM (System Center Configuration Manager)
+      - Worked for the IBM Packaging Factory subsidiary.
+      - Created silent installation packages for enterprise environments.
+      - Used tools like Wise Package Studio, InstallShield Repackager, and Microsoft Orca.
+      - Scripting for packages done using VBScript.
+      - Part of a project to deploy packages using SCCM (System Center Configuration Manager).
   - name: Argos
     position: System Administrator
     url: http://www.arg.ro
     startDate: "2008-08-01"
     endDate: "2011-07-01"
     highlights:
-      - System Administrator at a small office
-      - Maintained a small network of 20 workstations and 2 servers
+      - System Administrator for a small office.
+      - Maintained a small network of 20 workstations and 2 servers.
 skills:
-  - name: Langugages/Scripting
+  - name: Languages/Scripting
     level: Master
     keywords:
       - Groovy
@@ -90,13 +90,14 @@ skills:
       - Jenkins
 projects:
   - name: Home Projects
-    description: I keep a kubernetes cluster on 3 Intel NUCs that host all of my internal services
+    description: I maintain a Kubernetes cluster on 3 Intel NUCs hosting all my internal services.
     highlights:
-      - ""
+      - Set up and managed Kubernetes infrastructure.
+      - Automated deployment processes using Pulumi.
     keywords:
       - Kubernetes
       - Pulumi
   - name: DDNS Client in Golang
     keywords:
       - Golang
-    description: Developed a small Golang app specifically for the EdgeRouter-X. It's main feature is that it retries a PPPOE connection if the Public IP is CGNAT and updates Cloudflare with the new Public IP. It also sends notifications using Pushbullet. (Needs refactoring)
+    description: Developed a small Golang app for the EdgeRouter-X. Its main feature is retrying a PPPOE connection if the Public IP is CGNAT and updating Cloudflare with the new Public IP. It also sends notifications using Pushbullet. (Needs refactoring)
