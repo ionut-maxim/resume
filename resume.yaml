@@ -18,10 +18,12 @@ work:
     highlights:
       - Backend developer for Golang and Python services.
       - Developed a workflow engine in Golang and a basic serverless service.
+      - Contributed to the CI/CD pipeline as the company grew.
   - name: Secureworks
     position: Automation and Orchestration Engineer
     url: https://www.secureworks.com
     startDate: "2019-12-01"
+    endDate: "2022-08-01"
     highlights:
       - Developed playbooks and automations for internal orchestration platforms.
       - Scripting on these platforms using Groovy and Google CEL.
