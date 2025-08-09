@@ -31,7 +31,8 @@
   - Developed the backend for a sustainability platform serving multiple industries  
   - Migrated from GraphQL to RESTful APIs due to simpler requirements  
   - Applied a schema-first development model with TypeSpec-based code generation  
-  - Introduced event sourcing to support entity versioning  
+  - Introduced event sourcing to support entity versioning and auditing
+  - Built an AI agent to interact with tools defined within the platform
   - Utilised PostgreSQL, Redis, and ClickHouse  
   - Built the deployment pipeline for Google Cloud Run  
   - Developed an internal admin portal using Next.js  
