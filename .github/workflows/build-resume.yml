@@ -19,7 +19,7 @@ jobs:
         uses: lvignoli/typst-action@main
         with:
           source_file: main.typ
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: resume.pdf
           path: resume.pdf
