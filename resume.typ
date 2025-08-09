@@ -1,4 +1,4 @@
-#import "@preview/modern-cv:0.8.0": *
+#import "./template.typ": *
 
 #show: resume.with(
   author: (
@@ -14,7 +14,6 @@
   ),
   profile-picture: none,
   date: datetime.today().display(),
-  language: "en",
   colored-headers: true,
   show-footer: false,
 )
