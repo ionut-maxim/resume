@@ -13,17 +13,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: mikefarah/yq@master
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Typst
+        uses: lvignoli/typst-action@main
         with:
-          node-version: '14'
-          check-latest: true
-      - name: build-resume
-        run: |
-          yq -o=json eval resume.yaml > resume.json
-          npm install
-          npm start
+          source_file: main.typ
       - uses: actions/upload-artifact@v3
         with:
           name: resume.pdf
