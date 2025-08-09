@@ -168,6 +168,6 @@
 #resume-item[
   - Languages: Go, TypeScript, Python, PowerShell, Bash, Groovy  
   - Technologies: Kubernetes, Temporal, PostgreSQL, Redis, ClickHouse, NATS  
-  - Tools: Helm, Ansible, SCCM, Pulumi, Cloudflare, Helm, Terraform
+  - Tools: Helm, Ansible, SCCM, Pulumi, Cloudflare, Terraform
   - Cloud Platforms: Google Cloud Platform, On-prem Kubernetes, Azure  
 ]
